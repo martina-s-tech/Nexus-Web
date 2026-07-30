@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — NEXUS EVENTOS</title>
+<meta name="description" content="Contactá a NEXUS EVENTOS por WhatsApp, Instagram, mail o formulario para cotizar tu evento">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo">
+      <img src="fotos/Isotipo nexus.png" alt="Nexus Eventos">
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="corporativo.html">Corporativo</a></li>
+        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="contacto.html" class="nav-cta">Cotizar evento</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="padding-bottom:0;">
+  <div class="hero-inner">
+    <span class="eyebrow">Contacto</span>
+    <h1 style="font-size:clamp(32px,4.5vw,52px);">¿Organizando algo? Contanos qué evento es</h1>
+    <p>Elegí la vía que prefieras — te respondemos por donde nos escribas</p>
+  </div>
+</section>
+
+<!-- OPCIONES DE CONTACTO -->
+<section>
+  <div class="contact-options">
+
+    <!-- WHATSAPP -->
+    <a class="contact-option" href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20cotizar%20un%20evento" target="_blank" rel="noopener">
+      <span class="label">WhatsApp</span>
+      <h3>Escribinos directo</h3>
+      <p>La vía más rápida. Nos contas lo que queres armar y nosotros te asesoramos </p>
+      <span class="go">Abrir WhatsApp →</span>
+    </a>
+
+    <!-- INSTAGRAM -->
+    <a class="contact-option" href="https://instagram.com/nexuseventos.ar" target="_blank" rel="noopener">
+      <span class="label">Instagram</span>
+      <h3>@nexuseventos.ar</h3>
+      <p>Mirá fotos y videos reales de eventos anteriores, y escribinos por DM</p>
+      <span class="go">Ver Instagram →</span>
+    </a>
+
+    <!-- MAIL -->
+    <a class="contact-option" href="mailto:info.nexuseventos@gmail.com">
+      <span class="label">Mail</span>
+      <h3>info.nexuseventos@gmail.com</h3>
+      <p>Para propuestas corporativas o cotizaciones más detalladas por escrito</p>
+      <span class="go">Enviar mail →</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- FORMULARIO -->
+<section class="why-section">
+  <div class="wrap" style="padding:56px 0; text-align:center;">
+    <span class="eyebrow"> completá el formulario</span>
+    <h2 style="margin:14px 0 30px;">Contanos los detalles de tu evento</h2>
+
+    <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="68e4d121-441e-4bf8-ab7c-fb642df434f2">
+      <input type="hidden" name="subject" value="Nueva consulta desde la web — NEXUS EVENTOS">
+
+      <div class="field">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="field">
+        <label for="contacto">Mail o teléfono</label>
+        <input type="text" id="contacto" name="contacto" required>
+      </div>
+
+      <div class="field">
+        <label for="tipoEvento">Tipo de evento</label>
+        <select id="tipoEvento" name="tipo_evento">
+          <option>Cumpleaños</option>
+          <option>Previa / Egresados</option>
+          <option>Evento corporativo</option>
+          <option>Casamiento</option>
+          <option>Otro</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="fecha">Fecha estimada</label>
+        <input type="text" id="fecha" name="fecha" placeholder="dd/mm/aaaa">
+      </div>
+
+      <div class="field">
+        <label for="mensaje">Contanos más</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cantidad de invitados, espacio, qué servicios te interesan..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Enviar consulta</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+  </div>
+</section>
+
+<!-- BOTON WHATSAPP -->
+<a href="https://wa.me/54911XXXXXXXX?text=Hola,%20quiero%20consultar%20por%20un%20evento."
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="WhatsApp">
+<img src="fotos/WhatsApp.svg.webp" alt="WhatsApp">
+</a>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top wrap" style="max-width:1180px">
+        <div class="footer-logo">
+            <img src="fotos/logotipo nexus.png" alt="Nexus Eventos">
+        </div>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/nexuseventos.ar"
+           target="_blank"
+           aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 NEXUS EVENTOS — PRODUCCIÓN DE EVENTOS · BUENOS AIRES, ARGENTINA
+    </div>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+<script>
+  // Envío del formulario vía fetch para mostrar un mensaje de estado sin recargar la página
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = 'Enviando...';
+      status.className = 'form-status';
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        const data = await res.json();
+        if (data.success) {
+          status.textContent = '¡Listo! Te vamos a responder a la brevedad.';
+          status.className = 'form-status ok';
+          form.reset();
+        } else {
+          status.textContent = 'Hubo un error. Probá escribirnos por WhatsApp mientras lo resolvemos.';
+          status.className = 'form-status error';
+        }
+      } catch (err) {
+        status.textContent = 'Hubo un error. Probá escribirnos por WhatsApp mientras lo resolvemos.';
+        status.className = 'form-status error';
+      }
+    });
+  }
+</script>
+</body>
+</html>

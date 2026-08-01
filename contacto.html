@@ -13,13 +13,20 @@
 <header>
   <div class="wrap nav-inner">
     <a href="index.html" class="logo">
-      <img src="fotos/Isotipo nexus.png" alt="Nexus Eventos">
+      <img src="fotos/imagotipo 2 nexus sin fondo.png" alt="Nexus Eventos">
     </a>
     <button class="nav-toggle" aria-label="Abrir menú">☰</button>
     <nav>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
+        <li class="has-dropdown">
+          <a href="servicios.html">Servicios</a>
+          <ul class="dropdown">
+            <li><a href="karaoke.html">Karaoke &amp; Música</a></li>
+            <li><a href="gaming.html">Experiencia Gamer</a></li>
+            <li><a href="pantallas.html">Pantallas &amp; Audiovisual</a></li>
+          </ul>
+        </li>
         <li><a href="corporativo.html">Corporativo</a></li>
         <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
         <li><a href="contacto.html" aria-current="page">Contacto</a></li>
@@ -29,8 +36,10 @@
   </div>
 </header>
 
+
+
 <!-- HERO -->
-<section class="hero" style="padding-bottom:0;">
+<section class="hero reveal" style="padding-bottom:0;">
   <div class="hero-inner">
     <span class="eyebrow">Contacto</span>
     <h1 style="font-size:clamp(32px,4.5vw,52px);">¿Organizando algo? Contanos qué evento es</h1>
@@ -40,10 +49,10 @@
 
 <!-- OPCIONES DE CONTACTO -->
 <section>
-  <div class="contact-options">
+  <div class="contact-options reveal">
 
     <!-- WHATSAPP -->
-    <a class="contact-option" href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20cotizar%20un%20evento" target="_blank" rel="noopener">
+    <a class="contact-option reveal" href="https://wa.me/5491125028880?text=Hola%2C%20quiero%20cotizar%20un%20evento" target="_blank" rel="noopener">
       <span class="label">WhatsApp</span>
       <h3>Escribinos directo</h3>
       <p>La vía más rápida. Nos contas lo que queres armar y nosotros te asesoramos </p>
@@ -51,7 +60,7 @@
     </a>
 
     <!-- INSTAGRAM -->
-    <a class="contact-option" href="https://instagram.com/nexuseventos.ar" target="_blank" rel="noopener">
+    <a class="contact-option reveal" href="https://instagram.com/nexuseventos.ar" target="_blank" rel="noopener">
       <span class="label">Instagram</span>
       <h3>@nexuseventos.ar</h3>
       <p>Mirá fotos y videos reales de eventos anteriores, y escribinos por DM</p>
@@ -59,7 +68,7 @@
     </a>
 
     <!-- MAIL -->
-    <a class="contact-option" href="mailto:info.nexuseventos@gmail.com">
+    <a class="contact-option reveal" href="mailto:info.nexuseventos@gmail.com">
       <span class="label">Mail</span>
       <h3>info.nexuseventos@gmail.com</h3>
       <p>Para propuestas corporativas o cotizaciones más detalladas por escrito</p>
@@ -70,26 +79,26 @@
 </section>
 
 <!-- FORMULARIO -->
-<section class="why-section">
+<section class="why-section reveal">
   <div class="wrap" style="padding:56px 0; text-align:center;">
     <span class="eyebrow"> completá el formulario</span>
     <h2 style="margin:14px 0 30px;">Contanos los detalles de tu evento</h2>
 
-    <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+    <form class="contact-form reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="68e4d121-441e-4bf8-ab7c-fb642df434f2">
       <input type="hidden" name="subject" value="Nueva consulta desde la web — NEXUS EVENTOS">
 
-      <div class="field">
+      <div class="field reveal">
         <label for="nombre">Nombre</label>
         <input type="text" id="nombre" name="nombre" required>
       </div>
 
-      <div class="field">
+      <div class="field reveal">
         <label for="contacto">Mail o teléfono</label>
         <input type="text" id="contacto" name="contacto" required>
       </div>
 
-      <div class="field">
+      <div class="field reveal">
         <label for="tipoEvento">Tipo de evento</label>
         <select id="tipoEvento" name="tipo_evento">
           <option>Cumpleaños</option>
@@ -100,12 +109,12 @@
         </select>
       </div>
 
-      <div class="field">
+      <div class="field reveal">
         <label for="fecha">Fecha estimada</label>
         <input type="text" id="fecha" name="fecha" placeholder="dd/mm/aaaa">
       </div>
 
-      <div class="field">
+      <div class="field reveal">
         <label for="mensaje">Contanos más</label>
         <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cantidad de invitados, espacio, qué servicios te interesan..."></textarea>
       </div>
@@ -117,7 +126,7 @@
 </section>
 
 <!-- BOTON WHATSAPP -->
-<a href="https://wa.me/54911XXXXXXXX?text=Hola,%20quiero%20consultar%20por%20un%20evento."
+<a href="https://wa.me/5491125028880?text=Hola,%20quiero%20consultar%20por%20un%20evento."
    class="whatsapp-float"
    target="_blank"
    aria-label="WhatsApp">
@@ -127,22 +136,34 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-top wrap" style="max-width:1180px">
-        <div class="footer-logo">
-            <img src="fotos/logotipo nexus.png" alt="Nexus Eventos">
-        </div>
-
-      <div class="footer-social">
-        <a href="https://www.instagram.com/nexuseventos.ar"
-           target="_blank"
-           aria-label="Instagram">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
+      <div class="footer-col footer-col-logo">
+        <img src="fotos/Imagotipo nexus sin fondo.png" alt="Nexus Eventos" class="footer-logo-img">
+        <p class="footer-tagline">Servicios para eventos — karaoke, gaming y audiovisual</p>
       </div>
 
+      <div class="footer-col">
+        <span class="footer-col-title">Contacto</span>
+        <a href="https://wa.me/5491125028880" target="_blank" class="footer-link">
+          <i class="fa-brands fa-whatsapp"></i> +54 9 11 2502-8880
+        </a>
+        <a href="mailto:info.nexuseventos@gmail.com" class="footer-link">
+          <i class="fa-solid fa-envelope"></i> info.nexuseventos@gmail.com
+        </a>
+        <span class="footer-link">
+          <i class="fa-solid fa-location-dot"></i> Villa Devoto, CABA
+        </span>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-col-title">Seguinos</span>
+        <a href="https://www.instagram.com/nexuseventos.ar" target="_blank" aria-label="Instagram" class="footer-link">
+          <i class="fa-brands fa-instagram"></i> @nexuseventos.ar
+        </a>
+      </div>
     </div>
 
     <div class="footer-bottom">
-      © 2026 NEXUS EVENTOS — PRODUCCIÓN DE EVENTOS · BUENOS AIRES, ARGENTINA
+      © 2026 NEXUS EVENTOS — SERVICIOS PARA EVENTOS · BUENOS AIRES, ARGENTINA
     </div>
   </div>
 </footer>

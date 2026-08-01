@@ -10,16 +10,24 @@
 </head>
 <body>
 
+
 <header>
   <div class="wrap nav-inner">
     <a href="index.html" class="logo">
-      <img src="fotos/Isotipo nexus.png" alt="Nexus Eventos">
+      <img src="fotos/imagotipo 2 nexus sin fondo.png" alt="Nexus Eventos">
     </a>
     <button class="nav-toggle" aria-label="Abrir menú">☰</button>
     <nav>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html" aria-current="page">Servicios</a></li>
+        <li class="has-dropdown">
+          <a href="servicios.html" aria-current="page">Servicios</a>
+          <ul class="dropdown">
+            <li><a href="karaoke.html">Karaoke &amp; Música</a></li>
+            <li><a href="gaming.html">Experiencia Gamer</a></li>
+            <li><a href="pantallas.html" aria-current="page">Pantallas &amp; Audiovisual</a></li>
+          </ul>
+        </li>
         <li><a href="corporativo.html">Corporativo</a></li>
         <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
         <li><a href="contacto.html">Contacto</a></li>
@@ -29,10 +37,8 @@
   </div>
 </header>
 
-
 <!-- HERO -->
-<section class="page-hero"><div class="page-hero-bg"><img alt="Pantallas en evento" src="https://framerusercontent.com/images/Q040k52fyTUC7cZMsFj6obzMU.jpg?width=1200&amp;height=857"/></div><div class="wrap"><a class="back-link" href="servicios.html">← Volver a Servicios</a><div class="breadcrumb">
-<a href="index.html">Inicio</a><span class="sep">/</span><a href="servicios.html">Servicios</a><span class="sep">/</span><span class="current">Pantallas &amp; Audiovisual</span>
+<section class="page-hero reveal"><div class="page-hero-bg"><img alt="Pantallas en evento" src="fotos/pantalla-1.jpeg"/></div><div class="wrap"><a class="back-link" href="servicios.html">← Volver a Servicios</a><div class="breadcrumb">
 </div><div class="page-hero-text">
 <span class="eyebrow">Pantallas &amp; Audiovisual</span>
 <h1>La imagen correcta cambia todo un evento</h1>
@@ -44,25 +50,55 @@
 </div></div></section>
 
 
-
-<!-- QUÉ INCLUYE -->
+ <!-- Proyectores profesionales - destacado -->
 <section>
-  <div class="section-head">
-    <h2>Qué incluye</h2>
+  <div class="section-head reveal">
+    <h2>Pantallas y proyectores</h2>
   </div>
-  <div class="spec-list" style="margin-bottom:24px;">
-    <span>TVs de 32 a 75”</span>
-    <span>Proyectores profesionales</span>
-    <span>Pantallas gigantes</span>
-    <span>Sonido (opcional)</span>
-    <span>Micrófonos inalámbricos</span>
+
+  <div class="highlight-box reveal">
+    <span class="eyebrow">Equipos profesionales</span>
+    <h3>Proyección de alta calidad</h3>
+    <p>Trabajamos con marcas reconocidas y equipos pensados para verse bien en cualquier espacio:</p>
+    <ul class="check-list reveal">
+      <li>Epson, BenQ y ViewSonic, de 2800 a 3600 ANSI-lúmenes</li>
+      <li>Pantallas de proyección de 80” a 150”</li>
+      <li>Cobertura de imagen desde 40” hasta 300” según el espacio</li>
+    </ul>
   </div>
-  <div class="ideal-para">Ideal para <b>Corporativos · Presentaciones · Conferencias · Casamientos · Fiestas</b></div>
 </section>
 
+
+
+<!-- QUÉ INCLUYE -->
+<section style="padding-top:30px;">
+  <div class="section-head reveal">
+    <h2>Qué incluye</h2>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-item reveal"><i class="fa-solid fa-tv"></i><div class="feature-item-body"><b>TV LED</b><p>Pantallas de 32”, 40”, 50”, 65” y 75”, en formato horizontal o vertical, con pie y soporte incluido.</p></div></div>
+    <div class="feature-item reveal"><i class="fa-solid fa-plug"></i><div class="feature-item-body"><b>Conexión sin líos</b><p>Cables HDMI y VGA de hasta 10 metros, y presenter inalámbrico con puntero láser para presentaciones.</p></div></div>
+  </div>
+
+  <div class="ideal-para reveal" style="margin-top:24px;">Ideal para <b>Corporativos · Presentaciones · Conferencias · Casamientos · Fiestas</b></div>
+</section>
+
+<!-- LO QUE PODÉS SUMAR -->
+<section style="padding-top:32px;">
+  <div class="section-head reveal">
+    <h2>Lo que podés sumar</h2>
+    <p>Un extra para cuando el evento lo necesita.</p>
+  </div>
+  <div class="feature-grid feature-grid-1">
+    <div class="feature-item"><i class="fa-solid fa-volume-high"></i><div class="feature-item-body"><b>Sonido acorde al evento</b><p>Si es necesario, podés sumar sonido y micrófonos inalámbricos para tu evento.</p></div></div>
+  </div>
+</section>
+
+
 <!-- GALERÍA -->
-<section>
-  <div class="section-head">
+<section style="padding-top:32px;">
+  <div class="section-head reveal">
     <h2>Galería</h2>
   </div>
   <div class="gallery-grid">
@@ -72,75 +108,66 @@
   </div>
 </section>
 
-<!-- TODO LO QUE INCLUYE -->
-<section class="why-section">
-  <div class="wrap" style="padding:56px 0;">
-    <div class="section-head">
-      <h2>Todo lo que suma</h2>
-    </div>
-    <div class="feature-grid">
-      <div class="feature-item"><span class="dot"></span><div class="feature-item-body"><b>TV LED</b><p>Pantallas de 32”, 40”, 50”, 65” y 75”, en formato horizontal o vertical, con pie y soporte incluido.</p></div></div>
-      <div class="feature-item"><span class="dot"></span><div class="feature-item-body"><b>Proyectores profesionales</b><p>Equipos de 2800 a 3600 ANSI-lúmenes, con pantallas de proyección de 80” hasta 150”.</p></div></div>
-      <div class="feature-item"><span class="dot"></span><div class="feature-item-body"><b>Sonido opcional</b><p>Sumá sonido y micrófonos inalámbricos si el evento lo necesita, sin tener que contratarlo aparte.</p></div></div>
-      <div class="feature-item"><span class="dot"></span><div class="feature-item-body"><b>Conexión sin líos</b><p>Cables HDMI y VGA de hasta 10 metros, y presenter inalámbrico con puntero láser para presentaciones.</p></div></div>
+
+
+<!-- FAQ (2 columnas) -->
+<section class="faq-section reveal" style="max-width:none;">
+  <div class="wrap" style="max-width:1000px; text-align:center; padding:57px 32px;">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq-columns">
+      <div>
+        <div class="faq-item">
+          <button class="faq-question">¿Se puede usar un proyector al aire libre?<span class="faq-icon"></span></button>
+          <div class="faq-answer"><p>Se puede, pero no está pensado para quedar en exteriores durante todo el evento — el polvo, los cambios de temperatura y, sobre todo, la lluvia, afectan su vida útil. Lo tratamos como una TV en el jardín: se usa mientras dura el momento y se resguarda al terminar.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿En qué superficie se proyecta mejor?<span class="faq-icon"></span></button>
+          <div class="faq-answer"><p>Cualquier superficie sirve, pero la calidad óptima se logra en una pared plana y blanca. Proyectar sobre texturas o colores es posible, pero afecta la nitidez y los tonos de la imagen.</p></div>
+        </div>
+      </div>
+      <div>
+        <div class="faq-item">
+          <button class="faq-question">¿Se ve bien de día?<span class="faq-icon"></span></button>
+          <div class="faq-answer"><p>La luz solar o ambiental reduce mucho la visibilidad, sobre todo en proyectores. Recomendamos usarlo de noche o en espacios techados — cuanta menos luz ambiente, mejor contraste y definición.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Qué tamaño de pantalla conviene?<span class="faq-icon"></span></button>
+          <div class="faq-answer"><p>Los proyectores cubren desde 40” hasta 300”. Cuanto más grande la imagen, más luminosidad se pierde — con mucha luz natural conviene acercar el proyector a la superficie, y alejarlo a medida que baja la luz para lograr una imagen más grande.</p></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- PREGUNTAS TÉCNICAS -->
-<section>
-  <div class="section-head">
-    <h2>Antes de elegir, algunas cosas técnicas</h2>
-    <p>Información real para que definas mejor qué equipo conviene según tu espacio</p>
-  </div>
-  <div class="faq-list">
-    <div class="faq-item">
-      <button class="faq-question">¿Se puede usar un proyector al aire libre?<span class="faq-icon"></span></button>
-      <div class="faq-answer"><p>Se puede, pero no está pensado para quedar en exteriores durante todo el evento — el polvo, los cambios de temperatura y, sobre todo, la lluvia, afectan su vida útil. Lo tratamos como una TV en el jardín: se usa mientras dura el momento y se resguarda al terminar.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">¿En qué superficie se proyecta mejor?<span class="faq-icon"></span></button>
-      <div class="faq-answer"><p>Cualquier superficie sirve, pero la calidad óptima se logra en una pared plana y blanca. Proyectar sobre texturas o colores es posible, pero afecta la nitidez y los tonos de la imagen.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">¿Se ve bien de día?<span class="faq-icon"></span></button>
-      <div class="faq-answer"><p>La luz solar o ambiental reduce mucho la visibilidad, sobre todo en proyectores. Recomendamos usarlo de noche o en espacios techados — cuanta menos luz ambiente, mejor contraste y definición.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">¿Qué tamaño de pantalla conviene?<span class="faq-icon"></span></button>
-      <div class="faq-answer"><p>Los proyectores cubren desde 40” hasta 300”. Cuanto más grande la imagen, más luminosidad se pierde — con mucha luz natural conviene acercar el proyector a la superficie, y alejarlo a medida que baja la luz para lograr una imagen más grande.</p></div>
-    </div>
-  </div>
-</section>
 
 <!-- MODALIDADES -->
-<section class="why-section">
+<section class="why-section reveal" style="padding-top:32px;">
   <div class="wrap" style="padding:56px 0;">
-    <div class="section-head">
+    <div class="section-head reveal">
       <h2>Modalidades</h2>
     </div>
     <div class="modalidad-grid">
-      <div class="modalidad-item"><b>Retiro o entrega</b>Lo retirás en nuestro punto, o te lo llevamos, instalamos y retiramos nosotros con personal propio.</div>
-      <div class="modalidad-item"><b>Duración flexible</b>Por una jornada, un fin de semana completo o más — lo adaptamos a tu evento.</div>
-      <div class="modalidad-item"><b>Se combina con otros servicios</b>Pantallas + karaoke, pantallas + gaming — el armado final depende de qué combines.</div>
+      <div class="modalidad-item reveal"><b>Retiro o entrega</b>Lo retirás en nuestro punto, o te lo llevamos, instalamos y retiramos nosotros con personal propio.</div>
+      <div class="modalidad-item reveal"><b>Duración flexible</b>Por una jornada, un fin de semana completo o más — lo adaptamos a tu evento.</div>
+      <div class="modalidad-item reveal"><b>Se combina con otros servicios</b>Pantallas + karaoke, pantallas + gaming — el armado final depende de qué combines.</div>
     </div>
-    <p class="modalidad-note">El precio depende de la combinación exacta que arme tu evento. <a href="contacto.html">Contanos qué necesitás y te cotizamos al toque →</a></p>
+    <p class="modalidad-note reveal">El precio depende de la combinación exacta que arme tu evento. <a href="contacto.html">Contanos qué necesitás y te cotizamos al toque →</a></p>
   </div>
 </section>
 
 
 <!-- SERVICIOS RELACIONADOS -->
 <section style="text-align:center;">
-  <span class="eyebrow">También te puede interesar</span>
+  <span class="eyebrow reveal">También te puede interesar</span>
   <h2 style="margin:14px 0 24px; font-size:28px;">Combiná con otras experiencias.</h2>
-  <div class="related-services" style="justify-content:center;">
+  <div class="related-services reveal" style="justify-content:center;">
     <a href="karaoke.html">Karaoke &amp; Música →</a>
     <a href="gaming.html">Gaming Experience →</a>
   </div>
 </section>
 
 <!-- CTA FINAL -->
-<section class="contact-section">
+<section class="contact-section reveal">
   <span class="eyebrow">Pantallas &amp; Audiovisual</span>
   <h2>¿Necesitás pantallas para tu evento?</h2>
   <div class="contact-ctas">
@@ -149,7 +176,7 @@
 </section>
 
 <!-- BOTON WHATSAPP -->
-<a href="https://wa.me/54911XXXXXXXX?text=Hola,%20quiero%20consultar%20por%20un%20evento."
+<a href="https://wa.me/5491125028880?text=Hola,%20quiero%20consultar%20por%20un%20evento."
    class="whatsapp-float"
    target="_blank"
    aria-label="WhatsApp">
@@ -159,25 +186,38 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-top wrap" style="max-width:1180px">
-        <div class="footer-logo">
-            <img src="fotos/logotipo nexus.png" alt="Nexus Eventos">
-        </div>
-
-      <div class="footer-social">
-        <a href="https://www.instagram.com/nexuseventos.ar"
-           target="_blank"
-           aria-label="Instagram">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
+      <div class="footer-col footer-col-logo">
+        <img src="fotos/Imagotipo nexus sin fondo.png" alt="Nexus Eventos" class="footer-logo-img">
+        <p class="footer-tagline">Servicios para eventos — karaoke, gaming y audiovisual</p>
       </div>
 
+      <div class="footer-col">
+        <span class="footer-col-title">Contacto</span>
+        <a href="https://wa.me/5491125028880" target="_blank" class="footer-link">
+          <i class="fa-brands fa-whatsapp"></i> +54 9 11 2502-8880
+        </a>
+        <a href="mailto:info.nexuseventos@gmail.com" class="footer-link">
+          <i class="fa-solid fa-envelope"></i> info.nexuseventos@gmail.com
+        </a>
+        <span class="footer-link">
+          <i class="fa-solid fa-location-dot"></i> Villa Devoto, CABA
+        </span>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-col-title">Seguinos</span>
+        <a href="https://www.instagram.com/nexuseventos.ar" target="_blank" aria-label="Instagram" class="footer-link">
+          <i class="fa-brands fa-instagram"></i> @nexuseventos.ar
+        </a>
+      </div>
     </div>
 
     <div class="footer-bottom">
-      © 2026 NEXUS EVENTOS — PRODUCCIÓN DE EVENTOS · BUENOS AIRES, ARGENTINA
+      © 2026 NEXUS EVENTOS — SERVICIOS PARA EVENTOS · BUENOS AIRES, ARGENTINA
     </div>
   </div>
 </footer>
+
 
 
 <script src="script.js"></script>

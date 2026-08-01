@@ -16,16 +16,24 @@
 </head>
 <body>
 
+
 <header>
   <div class="wrap nav-inner">
     <a href="index.html" class="logo">
-      <img src="fotos/Isotipo nexus.png" alt="Nexus Eventos">
+      <img src="fotos/imagotipo 2 nexus sin fondo.png" alt="Nexus Eventos">
     </a>
     <button class="nav-toggle" aria-label="Abrir menú">☰</button>
     <nav>
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html" aria-current="page">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="index.html"  aria-current="page">Inicio</a></li>
+        <li class="has-dropdown">
+          <a href="servicios.html">Servicios</a>
+          <ul class="dropdown">
+            <li><a href="karaoke.html">Karaoke &amp; Música</a></li>
+            <li><a href="gaming.html">Experiencia Gamer</a></li>
+            <li><a href="pantallas.html">Pantallas &amp; Audiovisual</a></li>
+          </ul>
+        </li>
         <li><a href="corporativo.html">Corporativo</a></li>
         <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
         <li><a href="contacto.html">Contacto</a></li>
@@ -36,11 +44,14 @@
 </header>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero reveal">
+  <div class="hero-bg">
+    <img src="fotos/karaoke_1.jpeg" alt="">
+  </div>
   <div class="hero-inner">
-    <span class="eyebrow">Producción de eventos</span>
-    <h1>Transformamos eventos en experiencias memorables</h1>
-    <p>Karaoke, espacios gamer y producción audiovisual para que tu evento se sienta pensado, cuidado y difícil de olvidar.</p>
+    <span class="eyebrow">Karaoke, gaming y producción audiovisual para tu evento</span>
+    <h1>Servicios para eventos</h1>
+    <p>Instalamos, operamos y retiramos todo el equipo — vos solo disfrutás el evento</p>
     <div class="hero-ctas">
       <a href="servicios.html" class="btn-primary">Ver servicios</a>
       <a href="contacto.html" class="btn-ghost">Cotizar evento</a>
@@ -48,28 +59,29 @@
   </div>
 </section>
 
+
 <!-- SERVICIOS -->
 <section id="servicios">
-  <div class="section-head">
+  <div class="section-head reveal">
     <span class="eyebrow">Nuestros servicios</span>
     <h2>Experiencias para recordar</h2>
   </div>
-  <div class="services-grid">
-    <div class="service-card">
+  <div class="services-grid reveal">
+    <div class="service-card reveal">
       <img src="fotos/karaoke_1.jpeg" alt="Karaoke y música">
       <span class="idx">01 /</span>
       <h3>Karaoke &amp; Música</h3>
       <p>Una experiencia diseñada para romper el hielo y convertir cualquier reunión en un recuerdo inolvidable.</p>
       <a href="servicios.html#karaoke" class="card-link">Explorar Karaoke</a>
     </div>
-    <div class="service-card">
-      <img src="fotos/gamer_espacio_1.jpeg" alt="Gaming Experience">
+    <div class="service-card reveal">
+      <img src="fotos/gamer_espacio_1.jpeg" alt="Experiencia gamer">
       <span class="idx">02 /</span>
-      <h3>Gaming Experience</h3>
+      <h3>Experiencia Gamer</h3>
       <p>Espacios gamer listos para generar competencia, risas y momentos compartidos.</p>
-      <a href="servicios.html#gaming" class="card-link">Explorar Gaming</a>
+      <a href="servicios.html#gaming" class="card-link">Explorar Gamer</a>
     </div>
-    <div class="service-card">
+    <div class="service-card reveal">
       <img src="fotos/pantalla-1.jpeg" alt="Pantallas y audiovisual">
       <span class="idx">03 /</span>
       <h3>Pantallas &amp; audiovisual</h3>
@@ -80,77 +92,114 @@
 </section>
 
 <!-- POR QUE ELEGIRNOS -->
-<section class="why-section">
+<section class="why-section reveal">
   <div class="wrap why-inner">
     <h2>¿Por qué elegirnos?</h2>
     <div class="why-list">
-      <div class="why-item"><span class="num">01</span> DISEÑO<br>Cada setup se integra al evento con una estética cuidada.</div>
-      <div class="why-item"><span class="num">02</span> TECNOLOGÍA<br>Equipos confiables para que todo funcione desde el primer minuto.</div>
+      <div class="why-item"><span class="num">01</span> DISEÑO<br>Cada servicio se integra al evento de manera personalizada.</div>
+      <div class="why-item"><span class="num">02</span> TECNOLOGÍA<br>Equipos confiables para que todo funcione a la perfección desde el primer minuto.</div>
       <div class="why-item"><span class="num">03</span> TRANQUILIDAD<br>Logística, instalación y retiro resueltos por nosotros.</div>
     </div>
   </div>
 </section>
 
 <!-- DISEÑADO PARA TU EVENTO -->
-<section class="audience-section" id="sistema">
+<section class="audience-section reveal" id="sistema">
   <div class="wrap">
     <div class="section-head">
-      <h2>Diseñado para tu evento</h2>
-      <p>No importa si querés celebrar, presentar o sorprender. Armamos una propuesta que se adapta a lo que querés hacer sentir.</p>
+        <span class="eyebrow">Nuestro enfoque</span>
+        <h2>Diseñado para tu evento</h2>
+        <p>No importa si querés celebrar, presentar o sorprender. Armamos una propuesta que se adapta a lo que querés hacer sentir.</p>
     </div>
     <div class="audience-grid">
       <div class="audience-card"><b>EVENTOS SOCIALES</b>Cumpleaños, previas y encuentros con una puesta que invita a participar y hace que todos encuentren su momento.</div>
-      <div class="audience-card"><b>EVENTOS CORPORATIVOS</b>Presentaciones, activaciones y celebraciones con una puesta que se ve profesional sin sentirse fría.</div>
-      <div class="audience-card"><b>EXPERIENCIAS PERSONALIZADAS</b>Si tu evento pide algo distinto, combinamos las piezas correctas alrededor de una idea única.</div>
+      <div class="audience-card"><b>EVENTOS CORPORATIVOS</b>Presentaciones, activaciones y celebraciones con un servicio profesional.</div>
+      <div class="audience-card"><b>EXPERIENCIAS PERSONALIZADAS</b>Si tu evento necesita algo distinto, combinamos las piezas correctas alrededor de tu idea.</div>
     </div>
   </div>
 </section>
+
 
 <!-- COMO TRABAJAMOS -->
-<section class="steps-section">
+<section class="steps-section reveal">
   <span class="eyebrow">Cómo trabajamos</span>
-  <h2>De la idea al evento que querías vivir</h2>
+  <h2>Vos imaginás el evento, nosotros lo hacemos realidad</h2>
   <div class="steps-grid">
-    <div class="step"><span class="num">01</span><b>NOS CONTÁS TU EVENTO.</b>Qué querés celebrar y cómo querés que se sienta.</div>
-    <div class="step"><span class="num">02</span><b>DISEÑAMOS UNA PROPUESTA.</b>La combinación justa para tu espacio y tus invitados.</div>
-    <div class="step"><span class="num">03</span><b>COORDINAMOS TODO.</b>Entrega, instalación y retiro sin vueltas.</div>
-    <div class="step"><span class="num">04</span><b>VOS DISFRUTÁS.</b>El evento sucede. Nosotros cuidamos lo demás.</div>
+    <div class="step"><span class="num">01</span><b>NOS CONTÁS TU EVENTO</b>Escuchamos tu idea y cómo imaginás la experiencia.</div>
+    <div class="step"><span class="num">02</span><b>DISEÑAMOS UNA PROPUESTA</b>La combinación justa para tu espacio y tus invitados.</div>
+    <div class="step"><span class="num">03</span><b>COORDINAMOS TODO</b>Entrega, instalación y retiro sin vueltas.</div>
+    <div class="step"><span class="num">04</span><b>TODO LISTO PARA EMPEZAR</b>Con el equipamiento instalado y funcionando, solo queda disfrutar.</div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="faq-section">
-  <div class="wrap">
+
+<!-- FAQ (2 columnas) -->
+<section class="faq-section reveal" style="max-width:none;">
+  <div class="wrap" style="max-width:1000px; text-align:center; padding:57px 32px;">
     <h2>Preguntas frecuentes</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-question">¿Con cuánta anticipación conviene reservar?<span class="faq-icon"></span></button>
-        <div class="faq-answer"><p>Cuanto antes, mejor — trabajamos con cupo limitado por semana para poder cuidar cada evento como corresponde, y las fechas de fin de semana o temporada alta suelen cerrarse rápido.</p></div>
+    <div class="faq-columns">
+      <div>
+        <div class="faq-item">
+          <button class="faq-question">¿Cómo se realiza una reserva?<span class="faq-icon"></span></button>
+          <div class="faq-answer"><p>Nos escribís contándonos la fecha, el tipo de evento y qué querés incluir. Te armamos una propuesta con el detalle exacto de lo que vas a tener, y confirmás con una seña.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Con cuánta anticipación conviene reservar?<span class="faq-icon"></span></button>
+          <div class="faq-answer"><p>Cuanto antes, mejor — trabajamos con cupo limitado por semana para poder cuidar cada evento como corresponde, y las fechas de fin de semana o temporada alta suelen cerrarse rápido.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Llegan hasta mi domicilio con la logística?<span class="faq-icon"></span></button>
+          <div class="faq-answer"><p>Para confirmarte si llegamos hasta tu domicilio y el costo correspondiente, necesitamos la localidad, calle y entre calles del lugar del evento. Escribinos y te lo confirmamos.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Dónde están ubicados?<span class="faq-icon"></span></button>
+          <div class="faq-answer"><p>[COMPLETAR — definir qué dirección o zona mostrar públicamente, sin usar la base real de Soldie.]</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Puedo retirar los equipos personalmente?<span class="faq-icon"></span></button>
+          <div class="faq-answer"><p>Sí, algunos equipos son fáciles de trasladar e instalar, y si preferís retirarlos vos, te mostramos cómo instalarlos y manejarlos.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Puedo combinar más de una experiencia?<span class="faq-icon"></span></button>
+          <div class="faq-answer"><p>Sí, de hecho es lo que más recomendamos. Pantallas, iluminación y estaciones interactivas funcionan mejor combinadas que por separado.</p></div>
+        </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question">¿Se encargan de la instalación?<span class="faq-icon"></span></button>
-        <div class="faq-answer"><p>Sí, siempre. La instalación y el desmontaje están incluidos — no es algo que tengas que resolver vos ni tu proveedor de salón.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">¿Puedo combinar más de una experiencia?<span class="faq-icon"></span></button>
-        <div class="faq-answer"><p>Sí, de hecho es lo que más recomendamos. Pantallas, iluminación y estaciones interactivas funcionan mejor combinadas que por separado — armamos el paquete según lo que necesite tu evento.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">¿Trabajan con empresas?<span class="faq-icon"></span></button>
-        <div class="faq-answer"><p>Sí — ofrecemos cotización formal, factura A y coordinación previa para activaciones, eventos internos y lanzamientos.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">¿Pueden personalizar el setup?<span class="faq-icon"></span></button>
-        <div class="faq-answer"><p>Sí — desde el nombre o la marca en pantalla hasta el armado según el espacio. Cada evento es distinto, y el setup se piensa para el tuyo, no para uno genérico.</p></div>
+      <div>
+        <div class="faq-item">
+          <button class="faq-question">¿Qué pasa si llueve o cambia el lugar del evento?<span class="faq-icon"></span></button>
+          <div class="faq-answer"><p>Ante cambios por clima o locación, el servicio se puede reprogramar según disponibilidad. Es importante avisar con la mayor antelación posible.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Los servicios incluyen operador o coordinador?<span class="faq-icon"></span></button>
+          <div class="faq-answer"><p>Depende del servicio. Algunos son autogestionables, y otros —como el de juegos o consolas múltiples— pueden incluir un operador o coordinador.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Qué pasa si algo se rompe durante el evento?<span class="faq-icon"></span></button>
+          <div class="faq-answer"><p>Contamos con equipamiento de respaldo y soporte técnico. Si el daño es accidental y menor, no hay problema. En casos de rotura por mal uso, se analiza según lo acordado.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿El personal cuenta con seguro? ¿Pueden incluir cláusula de no repetición?<span class="faq-icon"></span></button>
+          <div class="faq-answer"><p>Sí, nuestro personal cuenta con cobertura de seguro en caso de ser requerido. Para eventos corporativos también podemos incluir cláusula de no repetición en el contrato.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Qué formas de pago aceptan?<span class="faq-icon"></span></button>
+          <div class="faq-answer"><p>Aceptamos transferencia bancaria, Mercado Pago y efectivo. Siempre se solicita una seña para confirmar la reserva.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Trabajan con empresas?<span class="faq-icon"></span></button>
+          <div class="faq-answer"><p>Sí — ofrecemos cotización formal, factura A y coordinación previa para activaciones, eventos internos y lanzamientos.</p></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+
+
 <!-- CONTACTO -->
-<section class="contact-section" id="contacto">
+<section class="contact-section reveal" id="contacto">
   <span class="eyebrow">Contacto</span>
-  <h2>Hagamos que tu próximo evento se vea así</h2>
+  <h2>Comencemos a crear tu próximo evento</h2>
   <div class="contact-ctas">
     <a href="contacto.html" class="btn-primary">Solicitar cotización</a>
     <a href="servicios.html" class="btn-ghost">Ver servicios</a>
@@ -158,7 +207,7 @@
 </section>
 
 <!-- BOTON WHATSAPP -->
-<a href="https://wa.me/54911XXXXXXXX?text=Hola,%20quiero%20consultar%20por%20un%20evento."
+<a href="https://wa.me/5491125028880?text=Hola,%20quiero%20consultar%20por%20un%20evento."
    class="whatsapp-float"
    target="_blank"
    aria-label="WhatsApp">
@@ -168,25 +217,38 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-top wrap" style="max-width:1180px">
-      <div class="footer-logo">
-        <img src="fotos/logotipo nexus.png" alt="Nexus Eventos">
+      <div class="footer-col footer-col-logo">
+        <img src="fotos/Imagotipo nexus sin fondo.png" alt="Nexus Eventos" class="footer-logo-img">
+        <p class="footer-tagline">Servicios para eventos — karaoke, gaming y audiovisual</p>
       </div>
 
-      <div class="footer-social">
-        <a href="https://www.instagram.com/nexuseventos.ar"
-           target="_blank"
-           aria-label="Instagram">
-          <i class="fa-brands fa-instagram"></i>
+      <div class="footer-col">
+        <span class="footer-col-title">Contacto</span>
+        <a href="https://wa.me/5491125028880" target="_blank" class="footer-link">
+          <i class="fa-brands fa-whatsapp"></i> +54 9 11 2502-8880
+        </a>
+        <a href="mailto:info.nexuseventos@gmail.com" class="footer-link">
+          <i class="fa-solid fa-envelope"></i> info.nexuseventos@gmail.com
+        </a>
+        <span class="footer-link">
+          <i class="fa-solid fa-location-dot"></i> Villa Devoto, CABA
+        </span>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-col-title">Seguinos</span>
+        <a href="https://www.instagram.com/nexuseventos.ar" target="_blank" aria-label="Instagram" class="footer-link">
+          <i class="fa-brands fa-instagram"></i> @nexuseventos.ar
         </a>
       </div>
-
     </div>
 
     <div class="footer-bottom">
-      © 2026 NEXUS EVENTOS — PRODUCCIÓN DE EVENTOS · BUENOS AIRES, ARGENTINA
+      © 2026 NEXUS EVENTOS — SERVICIOS PARA EVENTOS · BUENOS AIRES, ARGENTINA
     </div>
   </div>
 </footer>
+
 
 <script src="script.js"></script>
 </body>

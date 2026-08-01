@@ -10,16 +10,24 @@
 </head>
 <body>
 
+
 <header>
   <div class="wrap nav-inner">
     <a href="index.html" class="logo">
-      <img src="fotos/Isotipo nexus.png" alt="Nexus Eventos">
+      <img src="fotos/imagotipo 2 nexus sin fondo.png" alt="Nexus Eventos">
     </a>
     <button class="nav-toggle" aria-label="Abrir menú">☰</button>
     <nav>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
+        <li class="has-dropdown">
+          <a href="servicios.html">Servicios</a>
+          <ul class="dropdown">
+            <li><a href="karaoke.html">Karaoke &amp; Música</a></li>
+            <li><a href="gaming.html">Experiencia Gamer</a></li>
+            <li><a href="pantallas.html">Pantallas &amp; Audiovisual</a></li>
+          </ul>
+        </li>
         <li><a href="corporativo.html" aria-current="page">Corporativo</a></li>
         <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
         <li><a href="contacto.html">Contacto</a></li>
@@ -30,8 +38,9 @@
 </header>
 
 
+
 <!-- HERO -->
-<section class="page-hero"><div class="page-hero-bg"><img alt="Evento corporativo" src="https://framerusercontent.com/images/Q040k52fyTUC7cZMsFj6obzMU.jpg?width=1200&amp;height=857"/></div><div class="wrap"><div class="page-hero-text">
+<section class="page-hero reveal"><div class="page-hero-bg"><img alt="Evento corporativo" src="https://framerusercontent.com/images/Q040k52fyTUC7cZMsFj6obzMU.jpg?width=1200&amp;height=857"/></div><div class="wrap"><div class="page-hero-text">
 <span class="eyebrow">Para empresas / Proveedor profesional</span>
 <h1>Equipamiento profesional para eventos corporativos</h1>
 <p>Pantallas, proyectores, karaoke, espacios gamer y soluciones audiovisuales para empresas que buscan un proveedor confiable y un servicio cuidado de principio a fin.</p>
@@ -42,21 +51,21 @@
 
 <!-- SOLUCIONES -->
 <section>
-  <div class="section-head">
+  <div class="section-head reveal">
     <h2>Soluciones para empresas</h2>
   </div>
   <div class="corp-grid">
-    <div class="corp-card">
+    <div class="corp-card reveal">
       <span class="num">01</span>
       <h3><a href="servicios.html#pantallas">PRESENTACIONES Y CONFERENCIAS</a></h3>
       <p><a href="servicios.html#pantallas">Pantallas, proyectores, sonido y micrófonos para reuniones, charlas y presentaciones.</a></p>
     </div>
-    <div class="corp-card">
+    <div class="corp-card reveal">
       <span class="num">02</span>
       <h3><a href="servicios.html#gaming">EVENTOS INTERNOS</a></h3>
       <p><a href="servicios.html#gaming">Karaoke, espacios gamer y propuestas para integrar equipos y generar experiencias diferentes dentro de la empresa.</a></p>
     </div>
-    <div class="corp-card">
+    <div class="corp-card reveal">
       <span class="num">03</span>
       <h3><a href="servicios.html#pantallas">ACTIVACIONES Y LANZAMIENTOS</a></h3>
       <p><a href="servicios.html#pantallas">Equipamiento audiovisual y tecnológico para acciones de marca, ferias y eventos promocionales.</a></p>
@@ -65,7 +74,7 @@
 </section>
 
 <!-- POR QUE TRABAJAN CON NOSOTROS -->
-<section class="why-section">
+<section class="why-section reveal">
   <div class="wrap" style="padding:64px 0;">
     <div class="section-head center">
       <h2>¿Por qué las empresas trabajan con nosotros?</h2>
@@ -82,7 +91,7 @@
 <!-- EQUIPAMIENTO DISPONIBLE -->
 <section style="text-align:center;">
   <h2 style="font-size:32px;">Equipamiento disponible</h2>
-  <div class="equipment-tags" style="justify-content:center;">
+  <div class="equipment-tags reveal" style="justify-content:center;">
     <a href="servicios.html#pantallas">Pantallas y TVs</a>
     <a href="servicios.html#pantallas">Proyectores</a>
     <a href="servicios.html#pantallas">Sonido</a>
@@ -95,7 +104,7 @@
 </section>
 
 <!-- PROCESO -->
-<section class="steps-section">
+<section class="steps-section reveal">
   <h2>Un proveedor que acompaña cada etapa</h2>
   <div class="steps-grid">
     <div class="step"><span class="num">01</span><b>NOS CONTÁS TU EVENTO</b>Qué tipo de encuentro estás organizando y qué necesitás resolver.</div>
@@ -106,7 +115,7 @@
 </section>
 
 <!-- FORMULARIO / CTA -->
-<section class="contact-section">
+<section class="contact-section reveal">
   <span class="eyebrow">Para empresas / Propuesta personalizada</span>
   <h2>Contanos qué necesitás</h2>
   <p style="color:var(--ink-dim); max-width:540px; margin:14px auto 0;">Completá el formulario y te enviaremos una propuesta personalizada según el tipo de evento, la cantidad de asistentes y el equipamiento que necesitás.</p>
@@ -116,7 +125,7 @@
 </section>
 
 <!-- BOTON WHATSAPP -->
-<a href="https://wa.me/54911XXXXXXXX?text=Hola,%20quiero%20consultar%20por%20un%20evento."
+<a href="https://wa.me/5491125028880?text=Hola,%20quiero%20consultar%20por%20un%20evento."
    class="whatsapp-float"
    target="_blank"
    aria-label="WhatsApp">
@@ -126,25 +135,38 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-top wrap" style="max-width:1180px">
-        <div class="footer-logo">
-            <img src="fotos/logotipo nexus.png" alt="Nexus Eventos">
-        </div>
-
-      <div class="footer-social">
-        <a href="https://www.instagram.com/nexuseventos.ar"
-           target="_blank"
-           aria-label="Instagram">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
+      <div class="footer-col footer-col-logo">
+        <img src="fotos/Imagotipo nexus sin fondo.png" alt="Nexus Eventos" class="footer-logo-img">
+        <p class="footer-tagline">Servicios para eventos — karaoke, gaming y audiovisual</p>
       </div>
 
+      <div class="footer-col">
+        <span class="footer-col-title">Contacto</span>
+        <a href="https://wa.me/5491125028880" target="_blank" class="footer-link">
+          <i class="fa-brands fa-whatsapp"></i> +54 9 11 2502-8880
+        </a>
+        <a href="mailto:info.nexuseventos@gmail.com" class="footer-link">
+          <i class="fa-solid fa-envelope"></i> info.nexuseventos@gmail.com
+        </a>
+        <span class="footer-link">
+          <i class="fa-solid fa-location-dot"></i> Villa Devoto, CABA
+        </span>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-col-title">Seguinos</span>
+        <a href="https://www.instagram.com/nexuseventos.ar" target="_blank" aria-label="Instagram" class="footer-link">
+          <i class="fa-brands fa-instagram"></i> @nexuseventos.ar
+        </a>
+      </div>
     </div>
 
     <div class="footer-bottom">
-      © 2026 NEXUS EVENTOS — PRODUCCIÓN DE EVENTOS · BUENOS AIRES, ARGENTINA
+      © 2026 NEXUS EVENTOS — SERVICIOS PARA EVENTOS · BUENOS AIRES, ARGENTINA
     </div>
   </div>
 </footer>
+
 
 
 <script src="script.js"></script>

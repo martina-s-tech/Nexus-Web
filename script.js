@@ -65,3 +65,75 @@ const counterObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.5 });
 counters.forEach(el => counterObserver.observe(el));
+
+
+// Modal de detalle con carrusel de fotos
+function isVideo(src){
+  return /\.(mp4|webm|mov)$/i.test(src);
+}
+
+document.querySelectorAll('.option-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const imgEl = card.querySelector('.option-card-img');
+    const gallery = (imgEl.dataset.gallery || imgEl.querySelector('img').src)
+      .toString().split(',').map(s => s.trim());
+    const bodyHTML = card.querySelector('.option-card-body').innerHTML;
+    const alt = imgEl.querySelector('img').alt;
+
+    let current = 0;
+
+    const overlay = document.createElement('div');
+    overlay.className = 'detail-modal-overlay';
+    overlay.innerHTML = `
+      <div class="detail-modal">
+        <button class="detail-modal-close" aria-label="Cerrar">✕</button>
+        <div class="detail-modal-img">
+          ${isVideo(gallery[0]) ? `<video src="${gallery[0]}" controls autoplay muted loop></video>` : `<img src="${gallery[0]}" alt="${alt}">`}
+          ${gallery.length > 1 ? `
+            <button class="carousel-btn carousel-prev" aria-label="Anterior">‹</button>
+            <button class="carousel-btn carousel-next" aria-label="Siguiente">›</button>
+            <div class="carousel-dots">
+              ${gallery.map((_, i) => `<span class="carousel-dot${i===0?' active':''}" data-i="${i}"></span>`).join('')}
+            </div>
+          ` : ''}
+        </div>
+        <div class="detail-modal-body">${bodyHTML}</div>
+      </div>
+    `;
+    document.body.appendChild(overlay);
+
+    const dots = overlay.querySelectorAll('.carousel-dot');
+
+    function showImage(i){
+      current = (i + gallery.length) % gallery.length;
+      const src = gallery[current];
+      const mediaEl = isVideo(src)
+        ? `<video src="${src}" controls autoplay muted loop></video>`
+        : `<img src="${src}" alt="${alt}">`;
+      overlay.querySelector('.detail-modal-img').firstElementChild.outerHTML = mediaEl;
+      dots.forEach(d => d.classList.remove('active'));
+      if(dots[current]) dots[current].classList.add('active');
+    }
+
+    overlay.querySelector('.carousel-prev')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showImage(current - 1);
+    });
+    overlay.querySelector('.carousel-next')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showImage(current + 1);
+    });
+    dots.forEach(dot => {
+      dot.addEventListener('click', (e) => {
+        e.stopPropagation();
+        showImage(parseInt(dot.dataset.i, 10));
+      });
+    });
+
+    overlay.addEventListener('click', (e) => {
+      if(e.target === overlay || e.target.classList.contains('detail-modal-close')){
+        overlay.remove();
+      }
+    });
+  });
+});

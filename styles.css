@@ -656,15 +656,22 @@ footer{ border-top:1px solid var(--line); padding:56px 32px 36px; }
 
 /* Carrusel dentro del modal */
 .detail-modal-img{ position:relative; }
+
 .carousel-btn{
   position:absolute; top:50%; transform:translateY(-50%);
-  width:36px; height:36px; border-radius:50%;
-  background:rgba(10,10,11,0.6); border:1px solid var(--line);
-  color:var(--ink); font-size:16px; cursor:pointer;
+  width:40px; height:40px; border-radius:50%;
+  background:rgba(10,10,11,0.75); border:1.5px solid var(--accent);
+  color:var(--accent); font-size:20px; cursor:pointer;
   display:flex; align-items:center; justify-content:center;
   z-index:2;
+  box-shadow:0 0 12px rgba(198,255,61,0.25);
+  transition:background .2s, transform .2s;
 }
-.carousel-btn:hover{ border-color:var(--accent); color:var(--accent); }
+.carousel-btn:hover{
+  background:var(--accent); color:var(--bg);
+  transform:translateY(-50%) scale(1.08);
+}
+
 .carousel-prev{ left:12px; }
 .carousel-next{ right:12px; }
 .carousel-dots{
